@@ -1,0 +1,8 @@
+mkdir configure_gpu
+git init
+git add docker-install.txt install_gpu_windows.txt install_tensorflow_gpu_ubuntu.txt install.tx
+git commit -m "List of libraries to configure gpu"
+git remote add origin https://github.com/PhuntshoPhuntsho/configure_gpu.git
+git remote -v
+git push origin master
+
