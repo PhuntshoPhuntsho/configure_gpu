@@ -1,0 +1,14 @@
+conda create --name tensorflow python=3.7
+conda activate tensorflow
+conda install nb_conda
+conda install -c anaconda tensorflow-gpu
+git clone https://github.com/jeffheaton/t81_558_deep_learning.git
+cd t81_558_deep_learning/
+conda env update --file tools.yml
+conda install -c conda-forge gdal
+#pip install pyrsgis
+
+
+#install docker in ubuntu
+sudo apt install apt-transport-https curl ca-certificates software-properties-common
+

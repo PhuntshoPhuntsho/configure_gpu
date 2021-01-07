@@ -1,0 +1,29 @@
+conda create --name tensorflow python=3.7
+conda activate tensorflow
+conda install mamba -c conda-forge
+conda install nb_conda
+#mamba install gdal -c conda-forge
+mamba install tensorflow-gpu -c conda-forge
+pip install pandas
+python -m ipykernel install --user --name tensorflow --display-name "Python 3.7 (tensorflow)"
+pip install sklearn
+mamba install keras -c conda-forge
+#mamba uninstall gdal
+pip install C:\Users\pphun\Downloads\GDAL-3.1.4-cp37-cp37m-win_amd64.whl
+pip install matplotlib
+pip install matplotlib-scalebar
+
+
+
+
+
+
+
+
+
+# for pyrsgis another version
+python37 -m pip install C:\Users\pphun\Downloads\GDAL-3.1.4-cp37-cp37m-win_amd64.whl
+python37 -m pip install matplotlib
+python37 -m pip install matplotlib-scalebar
+python37 -m pip install tensorflow-gpu
+python37 -m pip install keras

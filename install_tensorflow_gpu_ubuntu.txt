@@ -1,0 +1,19 @@
+conda create -n tensorflow python=3.8
+conda activate tensorflow
+conda install mamba -c conda-forge
+mamba install geemap -c conda-forge
+mamba install jupyter_contrib_nbextensions -c conda-forge
+mamba update -c conda-forge geemap
+
+conda install -c conda-forge gdal
+pip install matplotlib_scalebar
+
+sudo apt install python3-dev python3-pip python3-venv
+
+conda install -c anaconda tensorflow-gpu
+
+mamba install keras -c conda-forge
+
+python -m ipykernel install --user --name tensorflow --display-name "Python 3.8 (tensorflow)"
+
+pip install sklearn
