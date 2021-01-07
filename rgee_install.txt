@@ -1,0 +1,16 @@
+# Install the rgee dependencies
+install.packages('remotes') # Basic
+install.packages(c('fansi','glue','Rcpp','jsonlite','cli','rappdirs','reticulate')) # Basic
+install.packages(c('mapview')) # Map visualization
+#install.packages(c('rgee'))
+remotes::install_github("r-spatial/rgee")
+# Install mlr3
+install.packages(c("mlr3", "mlr3learners", "mlr3filters", "mlr3pipelines", "mlr3misc", "paradox", "mlr3tuning", "ranger", "reticulate", "googledrive", "googleCloudStorageR"))
+
+library(reticulate)
+
+# Run the setup wizard
+ee_install()
+
+ee_Initialize(email = 'phuntsho.phuntsho@gmail.com', drive = TRUE) #gcs = TRUE)
+
