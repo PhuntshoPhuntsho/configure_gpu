@@ -17,3 +17,20 @@ mamba install keras -c conda-forge
 python -m ipykernel install --user --name tensorflow --display-name "Python 3.8 (tensorflow)"
 
 pip install sklearn
+
+pip install pygal #charting ee in python api
+
+
+## nbextensions (NOT WORKING)
+sudo apt install jupyter-notebook
+
+pip3 install jupyter_contrib_nbextensions
+
+~/.local/bin/jupyter-contrib-nbextension install --user
+~/anaconda3/envs/tensorflow/bin/jupyter-contrib-nbextension install --user #potential
+
+#jupyter contrib nbextension install --user
+
+/home/phuntsho/anaconda3/envs/tensorflow/share/jupyter/nbextensions
+
+
