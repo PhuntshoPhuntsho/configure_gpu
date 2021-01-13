@@ -20,6 +20,8 @@ pip install sklearn
 
 pip install pygal #charting ee in python api
 
+pip install ipygee
+
 
 ## nbextensions (NOT WORKING)
 sudo apt install jupyter-notebook

@@ -14,3 +14,5 @@ ee_install()
 
 ee_Initialize(email = 'phuntsho.phuntsho@gmail.com', drive = TRUE) #gcs = TRUE)
 
+conda install -c r r-irkernel
+conda install -c conda-forge jupyter notebook
