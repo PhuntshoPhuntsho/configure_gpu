@@ -16,3 +16,11 @@ ee_Initialize(email = 'phuntsho.phuntsho@gmail.com', drive = TRUE) #gcs = TRUE)
 
 conda install -c r r-irkernel
 conda install -c conda-forge jupyter notebook
+
+
+conda install -c conda-forge r-devtools
+conda install -c r r-wtss #client allows Earth observation users to obtain time series from data sets 					#available in a Web Time Series Server.
+
+conda install -c conda-forge r-rgdal
+conda install -c conda-forge r-raster
+conda install -c conda-forge r-sf

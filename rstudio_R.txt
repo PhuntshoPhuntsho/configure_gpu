@@ -1,0 +1,35 @@
+sudo apt-get purge r-base* r-recommended r-cran-*
+sudo apt autoremove
+sudo apt update
+
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | sudo apt-key add -
+sudo apt install r-base r-base-core r-recommended r-base-dev
+sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
+sudo apt update
+sudo apt install r-cran-rgl r-cran-rjags r-cran-snow r-cran-ggplot2 r-cran-igraph r-cran-lme4 r-cran-rjava r-cran-devtools r-cran-roxygen2 r-cran-rjava
+
+sudo apt install libgdal-dev libproj-dev libgeos-dev libudunits2-dev libnode-dev libcairo2-dev libnetcdf-dev
+
+sudo apt install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+
+sudo add-apt-repository 'deb http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu focal main '
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 314DF160
+sudo apt update
+sudo apt upgrade
+
+sudo apt install r-cran-gstat r-cran-maps r-cran-mapdata r-cran-ncdf4 r-cran-sp r-cran-sf r-cran-sp r-cran-raster r-cran-geor r-cran-ggmap r-cran-leaflet r-cran-rosm
+
+R> update.packages(ask = FALSE, checkBuilt = TRUE)
+R> update.packages(ask=FALSE, checkBuilt=TRUE) 
+
+#Rstudio
+install.packages("devtools")
+library(devtools)
+devtools::install_github("e-sensing/wtss")
+library(rgdal)
+
+

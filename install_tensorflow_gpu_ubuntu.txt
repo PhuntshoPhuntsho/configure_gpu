@@ -20,7 +20,11 @@ pip install sklearn
 
 pip install pygal #charting ee in python api
 
-pip install ipygee
+pip install ipygee rasterio geopandas tslearn
+
+pip install proplot
+
+
 
 
 ## nbextensions (NOT WORKING)
