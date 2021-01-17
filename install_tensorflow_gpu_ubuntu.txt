@@ -1,22 +1,37 @@
-conda create -n geetf python=3.8
-conda activate geetf
-#conda install mamba -c conda-forge
-conda install -c conda-forge ipykernel
-conda install -c conda-forge jupyterlab notebook
-conda install -c conda-forge jupyter_contrib_nbextensions
-conda install -c conda-forge geemap
-conda update -c conda-forge geemap
+############   geemap     ##############
 
-conda install -c conda-forge gdal
-pip install matplotlib_scalebar
+conda create -n geemap python
 
-sudo apt install python3-dev python3-pip python3-venv
+conda activate geemap
+
+conda install mamba -c conda-forge
+
+mamba install geemap -c conda-forge
+
+mamba install jupyter_contrib_nbextensions -c conda-forge
+
+python -m ipykernel install --user --name geemap --display-name "Python 3.9 (geemap)"
+
+################## tensorflow   #######################
+
+conda create -n tensorflow python=3.8
+
+#sudo apt install python3-dev python3-pip python3-venv
 
 conda install -c anaconda tensorflow-gpu
 
 conda install -c conda-forge keras
 
-python -m ipykernel install --user --name tensorflow --display-name "Python 3.8 (tensorflow)"
+conda install -c conda-forge gdal
+
+pip install matplotlib_scalebar sklearn pyrsgis
+
+conda install nb_conda
+
+python -m ipykernel install --user --name tensorflow --display-name "Python 3.8 (tf)"
+
+
+####################### additional setups     ################################
 
 pip install sklearn
 
@@ -28,9 +43,8 @@ pip install proplot
 
 pip install pyrsgis
 
-conda upgrade notebook
 
-
+############################# trial setups  ###########################################
 
 
 ## nbextensions (NOT WORKING)
