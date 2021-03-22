@@ -1,0 +1,10 @@
+How to install Hiri
+Step 1: Install snapd if you are running Ubuntu 16.04 or newer.
+
+$ sudo apt-get install snapd
+Step 2: Install Hiri snap package.
+
+$ sudo snap install hiri
+Step 3: To be able to open links in emails you will need to install snapd-xdg-open on Ubuntu.
+
+$ sudo apt-get install snapd-xdg-open

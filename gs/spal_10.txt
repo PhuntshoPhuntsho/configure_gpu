@@ -1,0 +1,9 @@
+gs://palm_mapping/Sumatra_palsar/2010/grid_11_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_12_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_13_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_14_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_1_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_2_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_6_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_7_sumatra_cl.tif
+gs://palm_mapping/Sumatra_palsar/2010/grid_8_sumatra_cl.tif

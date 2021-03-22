@@ -1,0 +1,21 @@
+It looks like you are mapping a function onto a collection, but inside the function you are reading in the same collection. Make sure when mapping functions onto collections, that the function itself only takes a single image as its argument and returns a single image. Here's how I handle the band renaming if I want to combine Landsat collections:
+
+function renameBandsETM(image) {
+    var bands = ['B1', 'B2', 'B3', 'B4', 'B5', 'B7', 'pixel_qa'];
+    var new_bands = ['B', 'G', 'R', 'NIR', 'SWIR1', 'SWIR2', 'pixel_qa'];
+    return image.select(bands).rename(new_bands);
+}
+var etm = ee.ImageCollection('LANDSAT/LE07/C01/T1_SR')
+  .map(renameBandsETM)
+I then do the same to the LC8 imagery, taking into account the different band naming system:
+
+function renameBandsOLI(image) {
+    var bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'pixel_qa'];
+    var new_bands = ['B', 'G', 'R', 'NIR', 'SWIR1', 'SWIR2', 'pixel_qa'];
+    return image.select(bands).rename(new_bands);
+}
+var oli = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
+  .map(renameBandsOLI);
+You can then merge the collections:
+
+var landsat = ee.ImageCollection(etm.merge(oli));

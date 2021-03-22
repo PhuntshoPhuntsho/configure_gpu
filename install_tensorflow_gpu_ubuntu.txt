@@ -10,7 +10,11 @@ mamba install geemap -c conda-forge
 
 mamba install jupyter_contrib_nbextensions -c conda-forge
 
+# ~/.local/bin/jupyter-contrib-nbextension install --user
+
 python -m ipykernel install --user --name geemap --display-name "Python 3.9 (geemap)"
+
+pip install statsmodels xlrd
 
 ################## tensorflow   #######################
 
@@ -30,6 +34,9 @@ conda install nb_conda
 
 python -m ipykernel install --user --name tensorflow --display-name "Python 3.8 (tf)"
 
+conda install -c conda-forge folium tslearn
+
+conda install --channel conda-forge geopandas
 
 ####################### additional setups     ################################
 
@@ -42,6 +49,15 @@ pip install ipygee rasterio geopandas tslearn
 pip install proplot
 
 pip install pyrsgis
+
+
+###################### geospatial   ###########################################
+
+conda create -n geospatial
+
+conda install --channel conda-forge geopandas
+
+conda install -c conda-forge folium tslearn
 
 
 ############################# trial setups  ###########################################

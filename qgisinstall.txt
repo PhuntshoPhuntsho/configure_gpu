@@ -1,0 +1,25 @@
+sudo nano /etc/apt/sources.list
+#inside list 
+
+#QGIS
+
+deb [arch=amd64] https://qgis.org/ubuntugis focal main
+deb-src [arch=amd64] https://qgis.org/ubuntugis focal main
+#Add via software 
+ppa:ubuntugis/ubuntugis-unstabl
+
+sudo apt-get update
+
+wget -O - https://qgis.org/downloads/qgis-2020.gpg.key | gpg --import
+gpg --fingerprint F7E06F06199EF2F2
+
+gpg --export --armor F7E06F06199EF2F2 | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
+sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+
+sudo apt update
+sudo apt-get upgrade
+
+sudo apt install qgis qgis-plugin-grass
+#already installed
+sudo apt-get install saga
+

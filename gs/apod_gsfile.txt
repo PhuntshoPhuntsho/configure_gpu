@@ -1,0 +1,16 @@
+gs://palm_mapping/APOD/lower/2001_op_lower.tif
+gs://palm_mapping/APOD/lower/2002_op_lower.tif
+gs://palm_mapping/APOD/lower/2003_op_lower.tif
+gs://palm_mapping/APOD/lower/2004_op_lower.tif
+gs://palm_mapping/APOD/lower/2005_op_lower.tif
+gs://palm_mapping/APOD/lower/2006_op_lower.tif
+gs://palm_mapping/APOD/lower/2007_op.tif
+gs://palm_mapping/APOD/lower/2008_op.tif
+gs://palm_mapping/APOD/lower/2009_op.tif
+gs://palm_mapping/APOD/lower/2010_op.tif
+gs://palm_mapping/APOD/lower/2011_op_lower.tif
+gs://palm_mapping/APOD/lower/2012_op_lower.tif
+gs://palm_mapping/APOD/lower/2013_op_lower.tif
+gs://palm_mapping/APOD/lower/2014_op_lower.tif
+gs://palm_mapping/APOD/lower/2015_op.tif
+gs://palm_mapping/APOD/lower/2016_op.tif

@@ -1,0 +1,6 @@
+gs://palm_mapping/Borneo_palsar/2008/grid_22_borneo_cl.tif
+gs://palm_mapping/Borneo_palsar/2008/grid_23_borneo_cl.tif
+gs://palm_mapping/Borneo_palsar/2008/grid_26_borneo_cl.tif
+gs://palm_mapping/Borneo_palsar/2008/grid_27_borneo_cl.tif
+gs://palm_mapping/Borneo_palsar/2008/grid_28_borneo_cl.tif
+gs://palm_mapping/Borneo_palsar/2008/grid_32_borneo_cl.tif
